@@ -16,9 +16,9 @@
 
 ## Capturas de Pantalla
 
-![Inicio](https://github.com/xscriptorcode/xscriptor/tree/master/screenshots/1.png)
-![Animación-json](https://github.com/xscriptorcode/xscriptor/tree/master/screenshots/2.png)
-![Formulario-cursor](https://github.com/xscriptorcode/xscriptor/tree/master/screenshots/3.png)
+![Inicio](https://github.com/xscriptorcode/xscriptor/raw/master/screenshots/1.png)
+![Animación-json](https://github.com/xscriptorcode/xscriptor/raw/master/screenshots/2.png)
+![Formulario-cursor](https://github.com/xscriptorcode/xscriptor/raw/master/screenshots/3.png)
 
 ## Componentes
 **Home**: para separar la lógica del home y poder usar las meta con next.
