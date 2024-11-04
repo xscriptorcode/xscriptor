@@ -6,13 +6,13 @@
 
 ## Secciones del Sitio
 
--**Inicio**: Página principal que presenta una visión general del sitio y sus contenidos destacados.
--**Colecciones**: Galería de obras de arte y literatura disponibles.
--**Info**: Información detallada sobre el autor y la misión del sitio.
--**Contacto**: Formulario y detalles para comunicarse con el autor o el equipo.
--**Portafolio**: Muestra de proyectos y trabajos realizados.
--**Blog**: Artículos y entradas relacionadas con temas de interés.
--**Políticas**: Página que detalla las políticas de privacidad y términos de uso del sitio.
+- **Inicio**: Página principal que presenta una visión general del sitio y sus contenidos destacados.
+- **Colecciones**: Galería de obras de arte y literatura disponibles.
+- **Info**: Información detallada sobre el autor y la misión del sitio.
+- **Contacto**: Formulario y detalles para comunicarse con el autor o el equipo.
+- **Portafolio**: Muestra de proyectos y trabajos realizados.
+- **Blog**: Artículos y entradas relacionadas con temas de interés.
+- **Políticas**: Página que detalla las políticas de privacidad y términos de uso del sitio.
 
 ## Capturas de Pantalla
 
@@ -21,17 +21,17 @@
 ![Formulario-cursor](https://github.com/xscriptorcode/xscriptor/raw/master/screenshots/3.png)
 
 ## Componentes
-**Home**: para separar la lógica del home y poder usar las meta con next.
-**Cursor**: implementación de un cursor personalizado.
-**footer**: un componente para sólo tener que importarlo en cada sitio.
-**Inicio.json**: animación al abrir el sitio, que por cierto está renderizado con lottie, fue más eficiente que el mp4.
-**InteractiveText/one/two**: variaciones del mismo código, componente para juego con frases de xscriptor.
-**Loading animation**: componente que define la funcionalidad para reproducir Inicio.Json.
-**Navbar**: barra de navegación.
-**NavLink**: enlaces en la barra de navegación.
-**NewsletterPopup**: componente para suscripción al boletín.
-**ParticleBackground**: componente para el script de partículas en info.
-**TransitionProvider**: animaciones y transiciones.
+- **Home**: para separar la lógica del home y poder usar las meta con next.
+- **Cursor**: implementación de un cursor personalizado.
+- **footer**: un componente para sólo tener que importarlo en cada sitio.
+- **Inicio.json**: animación al abrir el sitio, que por cierto está renderizado con lottie, fue más eficiente que el mp4.
+- **InteractiveText/one/two**: variaciones del mismo código, componente para juego con frases de xscriptor.
+- **Loading animation**: componente que define la funcionalidad para reproducir Inicio.Json.
+- **Navbar**: barra de navegación.
+- **NavLink**: enlaces en la barra de navegación.
+- **NewsletterPopup**: componente para suscripción al boletín.
+- **ParticleBackground**: componente para el script de partículas en info.
+- **TransitionProvider**: animaciones y transiciones.
 
 ## Tecnologías Utilizadas
 
