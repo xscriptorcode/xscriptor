@@ -1,0 +1,79 @@
+/* TermsConditionsCookiesPage.module.css */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+.container {
+  font-family: 'EB Garamond', serif;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  color: #333;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #111;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+}

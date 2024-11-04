@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+/* Título principal del blog */
+
+.h2-custom-w3s {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Subtítulo de las entradas del blog */
+.h3-custom-bcon {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;  /* Asegura que el contenedor ocupe el 100% del alto disponible */
+  cursor: pointer;
+}
+
+/* Estilos de la tarjeta del blog */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  perspective: 1000px;
+  font-family: 'EB Garamond', serif; /* Aplicar fuente Garamond */
+  transition: transform 0.3s ease;
+}
+
+/* Parte frontal de la tarjeta */
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.6s ease-in-out;
+  font-family: 'EB Garamond', serif; /* Aplicar fuente Garamond */
+}
+
+/* Parte trasera de la tarjeta */
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: transform 0.6s ease-in-out;
+  font-family: 'EB Garamond', serif; /* Aplicar fuente Garamond */
+}
+
+/* Efecto hover para voltear la tarjeta */
+.card-container:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+  transform: rotateY(360deg);
+}
+
+.relative {
+  overflow-y: auto; /* Permitir el scroll vertical */
+  touch-action: auto; /* Habilitar acciones táctiles como el deslizamiento */
+}

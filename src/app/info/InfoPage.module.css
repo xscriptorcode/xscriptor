@@ -1,0 +1,127 @@
+/* InfoPage.module.css */
+
+/* El contenedor principal debe ocupar todo el alto de la página */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* El contenedor de contenido debe expandirse para ocupar el espacio disponible */
+  .contentContainer {
+    flex: 1;
+  }
+  
+  /* Estilos del contenido */
+  .ctext {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'EB Garamond', serif;
+    text-align: justify;
+  }
+  
+  /* Personalización de títulos (h1) */
+  .h1-custom {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Personalización de subtítulos (h2) */
+  .h2-custom {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000;
+    margin-top: 40px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para párrafos */
+  .p-custom {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Texto con estilo monoespaciado */
+  .tpwt {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    color: #333;
+    padding: 10px;
+    text-align: justify;
+  }
+  
+  /* Efecto de texto borroso */
+  .blurry-text {
+    font-size: 1.2rem;
+    color: #666;
+    animation: blurText 6s forwards;
+  }
+  
+  /* Animación del efecto borroso */
+  @keyframes blurText {
+    0% {
+      filter: blur(10px);
+    }
+    100% {
+      filter: blur(0);
+    }
+  }
+  
+  /* Contenedor de enlaces */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para las tarjetas de enlaces */
+  .white-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .white-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .white-card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .white-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  

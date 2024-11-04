@@ -1,0 +1,93 @@
+/* ColeccionesPage.module.css */
+
+/* Estilo del fondo */
+.bg-black {
+    background-color: black;
+  }
+  
+  /* Estilos para la posición relativa y z-index */
+  .relative {
+    position: relative;
+    z-index: 20;
+  }
+  
+  /* Altura completa */
+  .h-full {
+    height: 100%;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  /* Imagen de fondo */
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Aseguramos que la imagen esté detrás del contenido */
+    width: 100%;
+    height: 100%;  /* Asegura que la imagen cubra todo el área */
+    overflow: hidden;
+  }
+  
+  .image-background {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Contenedor del contenido superpuesto */
+  .content-overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustar la altura para centrar correctamente el contenido */
+  }
+  
+  /* Flexbox para los botones */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  /* Contenedor de los botones */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Estilo personalizado para el botón */
+  .button {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.875rem; /* 30px */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+  }
+  

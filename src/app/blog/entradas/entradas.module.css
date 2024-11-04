@@ -1,0 +1,164 @@
+/* blog-confesiones.css */
+
+/* Estructura de página */
+.pageContainer {
+    height: 100%;
+  }
+  
+  .contentWrapper {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Títulos y textos */
+  .mainTitle {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+  
+  .metaInfo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+  
+  .highlightedText {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-style: italic;
+  }
+  
+  .articleText {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+
+  .sectionTitleLeft {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sectionTitle{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  
+  /* Imagen */
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .articleImage {
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+  }
+  
+  /* Bloque de citas */
+  .quote {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid #34dcce;
+    color: #000000;
+  }
+  
+  /* Tarjetas de contacto */
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .cardLink {
+    text-decoration: none;
+  }
+  
+  .card {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .cardFront,
+  .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .cardFront {
+    background-color: #ffd900;
+    color: #000000;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .cardBack {
+    background-color: #ffd900;
+    transform: rotateY(180deg);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    color: #000000;
+  }
+  
+  .card:hover .cardFront {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .cardBack {
+    transform: rotateY(360deg);
+  }
+  

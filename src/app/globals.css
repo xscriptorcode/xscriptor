@@ -1,0 +1,514 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+/* globals.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  cursor: none;
+  scroll-behavior: smooth;
+  
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Asegura que las partículas estén en el fondo */
+}
+
+.relative {
+  position: relative;
+  z-index: 1;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+
+/* Cursor personalizado */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999; /* Asegúrate de que esté por encima del contenido principal */
+  mix-blend-mode: difference;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+  
+.custom-text {
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+.h1-custom {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 80px;
+  color: #000000;
+}
+
+.h1-custom-w {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h1-custom-w-2s {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100px;
+  font-style: italic;
+  font-size: 120px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h2-custom {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.h2-custom-w3s {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 80px;
+  font-style: italic;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h2-custom-m {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #000000;
+}
+
+.h2-custom-b {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.h3-custom-w3s {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100px;
+  font-style: italic;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h3-custom-w3sc {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100px;
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h3-custom-wcon {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100px;
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h3-custom-bcon {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100px;
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.h5-custom {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300px;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 10px 10px 10px rgba(10, 10, 10, 10);
+}
+
+.h3-custom {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.p-custom {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000000;
+}
+
+.p2-custom {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000000;
+}
+
+.h2-subs {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 10px;
+  color: #000000;
+}
+
+.p-custom-w {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: none;
+}
+
+.pc {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: #000000;
+}
+
+/* blur text */
+@keyframes blurText {
+  0% {
+    filter: blur(50px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.blurry-text {
+  font-size: 24px;
+  animation: blurText 6s forwards;
+}
+
+.tpwt {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.ctext {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.white-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: #333;
+}
+
+.white-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.white-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.white-card p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Estilos adicionales */
+.relative {
+  position: relative;
+}
+
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.-z-10 {
+  z-index: -10; /* Asegura que el fondo de partículas esté detrás del contenido */
+}
+
+.z-10 {
+  z-index: 10; /* Asegura que el contenido esté por encima del fondo de partículas */
+}
+
+
+.h-ful {
+  height: 100%; /* Corrige la clase "h-ful" a "h-full" si es necesario */
+}
+
+.relativel {
+  position: relative; /* Corrige la clase "relativel" a "relative" si es necesario */
+}
+
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+
+/*Blogs*/
+
+.quote {
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #ffffff00;
+  border-left: 5px solid #34dcce;
+  color: #000000;
+}
+
+.card-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Para remover subrayado en los enlaces */
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.6s ease-in-out;
+  cursor: none;
+}
+
+.card-front {
+  background-color: #000000; /* Azul */
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-back {
+  background-color: #ffffff; /* Azul oscuro */
+  transform: rotateY(180deg);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Flip effect on hover */
+.card-container:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+  transform: rotateY(360deg);
+}
+
+
+
+/*Contacto */
+
+.card-container-c {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Para remover subrayado en los enlaces */
+}
+
+.card-c {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-front-c,
+.card-back-c {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.6s ease-in-out;
+  cursor: none;
+}
+
+.card-front-c {
+  background-color: #ffd900; 
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
+}
+
+.card-back-c {
+  background-color: #ffd900; 
+  transform: rotateY(180deg);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Flip effect on hover */
+.card-container-c:hover .card-front-c {
+  transform: rotateY(180deg);
+}
+
+.card-container-c:hover .card-back-c {
+  transform: rotateY(360deg);
+}
+
+
+/* vídeos */
+
+/* globals.css */
+
+/* globals.css */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;  /* Transición para opacidad y filtro */
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Permite que se puedan hacer clics en los elementos debajo */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 40%, transparent 60%, rgba(0, 0, 0, 0.9));
+}
+
+/*Animación del inicio*/
+
+.lottie-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Puedes ajustar el color de fondo según tu diseño */
+}
+
+.lottie-container > div {
+  width: 100%;
+  height: 100%;
+}

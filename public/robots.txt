@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.xscriptor.com
+
+# Sitemaps
+Sitemap: https://www.xscriptor.com/sitemap.xml

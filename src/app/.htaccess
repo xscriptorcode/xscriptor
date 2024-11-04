@@ -1,0 +1,16 @@
+# Habilitar las reglas de reescritura
+RewriteEngine On
+RewriteBase /
+
+# Si acceden a index.html, no hacer nada
+RewriteRule ^index\.html$ - [L]
+
+# Si la URL no es un archivo o directorio, buscar la versión .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ $1.html [L]
+
+# Redirigir todas las solicitudes no manejadas a index.html para manejar rutas con Next.js en frontend
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
