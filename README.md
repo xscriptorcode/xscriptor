@@ -6,13 +6,13 @@
 
 ## Secciones del Sitio
 
-- **Inicio**: Página principal que presenta una visión general del sitio y sus contenidos destacados.
-- **Colecciones**: Galería de obras de arte y literatura disponibles.
-- **Info**: Información detallada sobre el autor y la misión del sitio.
-- **Contacto**: Formulario y detalles para comunicarse con el autor o el equipo.
-- **Portafolio**: Muestra de proyectos y trabajos realizados.
-- **Blog**: Artículos y entradas relacionadas con temas de interés.
-- **Políticas**: Página que detalla las políticas de privacidad y términos de uso del sitio.
+-**Inicio**: Página principal que presenta una visión general del sitio y sus contenidos destacados.
+-**Colecciones**: Galería de obras de arte y literatura disponibles.
+-**Info**: Información detallada sobre el autor y la misión del sitio.
+-**Contacto**: Formulario y detalles para comunicarse con el autor o el equipo.
+-**Portafolio**: Muestra de proyectos y trabajos realizados.
+-**Blog**: Artículos y entradas relacionadas con temas de interés.
+-**Políticas**: Página que detalla las políticas de privacidad y términos de uso del sitio.
 
 ## Capturas de Pantalla
 
