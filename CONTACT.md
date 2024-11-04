@@ -1,9 +1,9 @@
-# Contacto
+# Contact
 
-Para consultas o información adicional sobre el proyecto, puedes ponerte en contacto con el equipo a través de las siguientes opciones:
+For inquiries or additional information about the project, you can contact the team through the following options:
 
-- **Correo electrónico**: [x@xscriptor.com](mailto:x@xscriptor.com)
-- **Sitio web**: [https://xscriptor.com](https://xscriptor.com)
-- **Sección de Contacto en el Sitio**: Visita la sección de [Contacto](https://xscriptor.com/contacto) en el sitio web para más información.
+- **Email**: [x@xscriptor.com](mailto:x@xscriptor.com)
+- **Website**: [https://xscriptor.com](https://xscriptor.com)
+- **Contact Section on the Site**: Visit the [Contact](https://xscriptor.com/contacto) section on the website for more information.
 
-Agradecemos cualquier comentario o sugerencia que ayude a mejorar el proyecto.
+We appreciate any feedback or suggestions that help improve the project.

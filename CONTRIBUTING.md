@@ -1,24 +1,24 @@
-# Guía de Contribuciones
+# Contribution Guide
 
-¡Gracias por tu interés en contribuir a este proyecto! A continuación, se detallan las pautas para contribuir.
+Thank you for your interest in contributing to this project! Below are the guidelines for contributing.
 
-## Cómo Contribuir
+## How to Contribute
 
-1. **Reporta errores**: Si encuentras un problema, abre un issue detallando el error y cómo reproducirlo.
-2. **Solicita funciones**: Si tienes una idea para una nueva función, abre un issue para discutirla.
-3. **Envía un Pull Request**: Si quieres contribuir con código, sigue los pasos a continuación.
+1. **Report Bugs**: If you find an issue, open an issue detailing the error and how to reproduce it.
+2. **Request Features**: If you have an idea for a new feature, open an issue to discuss it.
+3. **Submit a Pull Request**: If you want to contribute code, follow the steps below.
 
-## Proceso para Contribuir con Código
+## Process for Contributing Code
 
-1. Haz un fork del repositorio.
-2. Crea una rama para tu contribución (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y asegúrate de seguir las reglas de estilo.
-4. Realiza un commit de tus cambios (`git commit -m 'Añadir nueva funcionalidad'`).
-5. Envía tus cambios al repositorio remoto (`git push origin feature/nueva-funcionalidad`).
-6. Abre un Pull Request en este repositorio.
+1. Fork the repository.
+2. Create a branch for your contribution (`git checkout -b feature/new-feature`).
+3. Make your changes and ensure you follow the style guidelines.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push your changes to the remote repository (`git push origin feature/new-feature`).
+6. Open a Pull Request in this repository.
 
-## Código de Conducta
+## Code of Conduct
 
-Por favor, mantén una actitud respetuosa y profesional en todas las interacciones en este proyecto.
+Please maintain a respectful and professional attitude in all interactions in this project.
 
-Gracias por tu contribución.
+Thank you for your contribution.
